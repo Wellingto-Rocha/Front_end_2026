@@ -2,7 +2,6 @@
 - 💻 Eu trabalho com Analise de dados
 - 🌱 Eu estou cursando Engenharia de Software.
 - 📫 Como chegar ate mim - wellingtonfr18@gmail.com
-- 😄 Pronomes: ele/dele
 
 ##  🚀*Meus interesses na area de TI/TIC*🚀
 *Me formar Eng. de Software, desenvorver projetos pessoais e empresariais, aperfeiçoar minhas habilidades em lógica, banco de dados e Python!*
