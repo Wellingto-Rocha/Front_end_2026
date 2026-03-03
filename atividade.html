@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material de Estudo Digital - Algoritmos</title>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        article {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        aside {
+            background-color: #ddd;
+            padding: 10px;
+            margin-top: 10px;
+
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .header {
+            background-color: #333;
+        }
+
+        #main {
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: #222;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+	
+<header>
+    <h1>Material de Estudo Digital</h1>
+    <h2>Algoritmos e Lógica de Programação</h2>
+    <p>
+        Este material tem como objetivo explicar os conceitos básicos de algoritmos 
+        e lógica de programação, fundamentais para qualquer estudante da área de tecnologia.
+    </p>
+	
+</header>
+
+<nav>
+    <a href="#home" target="_self">Home</a>
+    <a href="#avaliacao de material" target="_self" title="Ir para avaliacao de material">Avaliação de Material</a>
+    <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+</nav>
+
+<h2>Conteúdos abordados:</h2>
+    <ul>
+        <li>O que é um algoritmo</li>
+        <li>Fluxogramas</li>
+        <li>Variáveis</li>
+        <li>Estruturas condicionais</li>
+        <li>Estruturas de repetição</li>
+    </ul>
+
+<h2>O que é um algoritmo?</h2>
+<p>Um algoritmo é uma sequência finita, lógica e bem definida de instruções criada para realizar uma tarefa específica ou resolver um problema. Na computação, ele funciona como um "passo a passo" que orienta o computador a processar dados ou executar ações. Enquanto o algoritmo é o plano de ação (a receita), a lógica de programação é o raciocínio aplicado para estruturar esses passos de maneira eficiente e correta. 
+
+<ul>
+	<li><b>Definição:</b> É um conjunto de regras não ambíguas que, ao serem seguidas, levam ao resultado desejado.</li>
+	<li><b>Analogia:</b> Pode ser comparado a uma receita de bolo: você precisa seguir os ingredientes e as etapas na ordem correta para obter o resultado final.</li>
+	<li><b>Algoritmo:</b> A lógica da solução (o que deve ser feito).</li>
+	<li><b>Programa:</b> A tradução desse algoritmo para uma linguagem que o computador entenda.</li>
+	<li><b>Importância da Lógica:</b> É a base que permite organizar o pensamento, estruturar o código de forma coesa, resolver problemas complexos e garantir que o computador execute as tarefas exatamente como esperado. </li>
+</ul>
+Os algoritmos estão presentes em quase tudo na tecnologia atual, desde buscas na internet e sistemas de recomendação em redes sociais até cálculos financeiros complexos.</p>
+
+
+<h2>Fluxogramas</h2>
+<p>Um algoritmo é uma sequência lógica de passos finitos para resolver um problema. O fluxograma é a representação gráfica desse algoritmo, utilizando formas geométricas padronizadas para visualizar o fluxo de execução. Essa ferramenta facilita a compreensão de processos, identificação de falhas e planejamento do código antes de sua implementação em uma linguagem de programação, tornando o raciocínio mais estruturado e claro. 
+Símbolos Básicos do Fluxograma-> Para construir fluxogramas, utilizam-se símbolos padronizados (norma ANSI, por exemplo) que possuem significados específicos.
+<ul>
+	<li><b>Oval (Terminador):</b> Indica o início ou o fim do algoritmo.</li>
+	<li><b>Retângulo (Processo):</b> Representa uma ação, tarefa ou operação a ser executada.</li>
+	<li><b>Losango (Decisão):</b> Utilizado para tomadas de decisão que exigem uma resposta lógica (ex: Sim/Não ou Verdadeiro/Falso), criando caminhos alternativos.</li>
+	<li><b>Setas (Linhas de Fluxo):</b> Conectam os símbolos e definem a direção e a ordem em que o processo ocorre.</li>
+	<li><b>Paralelogramo (Entrada/Saída):</b> Frequentemente usado para representar a leitura de dados (entrada) ou a exibição de resultados (saída).</li></p>
+
+<h3>Por que utilizar?</h3>
+	<li><b>Visualização:</b> Transforma lógica textual em um diagrama claro, facilitando a identificação de "gargalos" ou erros na lógica.</li>
+	<li><b>Padronização:</b> A simbologia universal permite que desenvolvedores de diferentes lugares entendam o fluxo de um sistema.</li>
+	<li><b>Planejamento:</b> É uma etapa essencial para organizar o pensamento antes de escrever o código real, poupando tempo de depuração futura.</li>
+</ul>
+
+<h2>Variáveis</h2>
+<p>
+Variáveis são estruturas fundamentais na programação, atuando como "caixas" na memória RAM do computador que armazenam dados temporários durante a execução de um algoritmo. Elas recebem esse nome porque seu conteúdo pode ser alterado conforme a lógica do programa exige. Para utilizá-las corretamente, é necessário definir seu tipo (como inteiro, real, caractere ou lógico), permitindo que o sistema reserve o espaço de memória adequado antes de manipular a informação.
+
+<h3>Conceitos Principais</h3>
+<ul>
+	<li><b>O que são:</b> São identificadores (nomes) usados para representar valores que podem mudar ao longo do tempo.</li>
+	<li><b>Armazenamento:</b> Quando uma variável é declarada, um espaço específico na memória volátil (RAM) é alocado para guardar seu valor enquanto o programa estiver em execução.
+	<li><b>Tipos de Dados:</b> Cada variável deve ser associada a um tipo, que define o que ela pode armazenar:</li>
+<ul>
+	<li><b>Inteiro (int):</b> Números sem casas decimais (ex: 10, -5).</li>
+	<li><b>Real (float, double):</b> Números com casas decimais (ex: 10.5, -3.14).</li>
+	<li><b>Caractere/Texto (char, string):</b> Letras, palavras ou frases (ex: "Maria", 'A').</li>
+	<li><b>Lógico (boolean):</b> Valores verdadeiro ou falso (ex: true, false).</li>
+</ul>
+	<li><b>Variáveis vs. Constantes:</b> Diferente das variáveis, as constantes são identificadores cujo valor, uma vez atribuído, não pode ser alterado durante a execução do programa.</li>
+	<li><b>Declaração:</b> Na maioria das linguagens e pseudocódigos, é necessário declarar a variável antes de usá-la, informando seu nome e tipo, para que o compilador ou interpretador saiba como tratar aquele dado.</li>
+</ul>
+O uso de variáveis torna o código mais intuitivo, flexível e fácil de manter, permitindo que o algoritmo processe informações de forma dinâmica, como realizar cálculos, comparar valores ou controlar fluxos de repetição.
+
+</p>
+
+<h2>Estruturas condicionais</h2>
+<p>As estruturas condicionais permitem que um algoritmo tome decisões ao avaliar expressões lógicas (verdadeiro ou falso). Elas direcionam o fluxo de execução, garantindo que blocos específicos de código rodem apenas quando certas condições são atendidas. As principais formas incluem a simples (executa algo apenas se verdadeiro), a composta (executa ações distintas para verdadeiro ou falso) e estruturas de múltipla escolha.
+
+<h3>Principais Tipos de Estruturas Condicionais</h3>
+<ul>
+	<li><b>Condicional Simples:</b> Executa um bloco de ações apenas se a condição for verdadeira. Se for falsa, o algoritmo segue para a próxima instrução sem realizar nada.</li>
+<ul>
+	<li><b>Exemplo:</b> SE (idade >= 18) ENTÃO exibir "Maior de idade".</li>
+</ul>
+	<li><b>Condicional Composta:</b> Oferece um caminho alternativo. Se a condição for verdadeira, executa o primeiro bloco; caso contrário (SENÃO), executa o segundo bloco.</li>
+<ul>
+	<li><b>Exemplo:</b> SE (nota >= 7) ENTÃO "Aprovado" SENÃO "Reprovado".</li>
+</ul>
+	<li><b>Condicionais Aninhadas:</b> Ocorrem quando uma estrutura condicional é colocada dentro de outra, permitindo verificações complexas e hierárquicas.</li>
+	<li><b>Escolha/Caso (Switch-Case):</b> Utilizada quando há várias opções de valores pontuais para uma variável, tornando o código mais limpo do que múltiplos "se/senão".</li>
+</ul>
+<h3>Elementos Fundamentais</h3>
+Para construir essas estruturas, utiliza-se a combinação de:
+<ul>
+	<li>Operadores de Comparação: Como == (igual), != (diferente), > (maior), < (menor), >= (maior ou igual) e <= (menor ou igual).</li>
+	<li>Operadores Lógicos: Permitem combinar várias condições, como E (AND), OU (OR) e NÃO (NOT), possibilitando lógicas mais sofisticadas.</li>
+</ul>
+Dominar essas estruturas é essencial, pois elas permitem que o programa "pense" e se comporte de maneira dinâmica frente a diferentes entradas de dados.
+
+</p>
+
+<h2>Estruturas de repetição</h2>
+<p>
+Estruturas de repetição, também chamadas de laços (loops) ou iterações, permitem executar um mesmo bloco de código repetidamente até que uma condição específica seja atendida. Elas são essenciais para automatizar tarefas repetitivas, evitar a redundância de código e processar listas de dados com eficiência. A escolha da estrutura depende de se o número de repetições é conhecido antecipadamente ou se depende de uma condição dinâmica.
+
+<h3>Principais Estruturas de Repetição</h3>
+<ul>
+	<li><b>PARA (For):</b> Ideal quando se sabe previamente o número de vezes que o bloco deve ser executado. Utiliza uma variável de controle (contador) que é incrementada ou decrementada automaticamente a cada ciclo.</li>
+	<li><b>ENQUANTO (While):</b> Verifica uma condição antes de executar o bloco. Se a condição for falsa inicialmente, o bloco nunca será executado. É ideal quando não se sabe quantas repetições serão necessárias.</li>
+	<li><b>REPITA... ATÉ (Do... While):</b> Verifica a condição após a execução do bloco. Isso garante que o código dentro do laço seja executado pelo menos uma vez, independentemente da condição.</li>
+</ul>
+
+<h3>Pontos Importantes</h3>
+<ul>
+	<li><b>Condição de Parada:</b> É fundamental garantir que a condição de parada seja alcançada em algum momento, caso contrário, o programa entrará em um loop infinito, travando a execução.
+	<li><b>Contadores e Acumuladores:</b> Frequentemente utilizados dentro dos laços, contadores ajudam a controlar o número de repetições, enquanto acumuladores somam ou processam valores ao longo das iterações.
+</ul>
+</p>
+
+<section id="avaliacao de material">
+    <h2>Avaliação de Material</h2>
+
+    <form>
+        <fieldset>
+            <legend>Envie uma mensagem</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label>O conteúdo foi claro?</label><br>
+        	<input type="radio" name="clareza" value="sim"> Sim<br>
+        	<input type="radio" name="clareza" value="nao"> Não<br><br>
+
+     	    <label>Qual sua nota para o material?</label><br>
+       		 <select name="nota">
+            		<option value="1">1</option>
+            		<option value="2">2</option>
+            		<option value="3">3</option>
+            		<option value="4">4</option>
+            		<option value="5">5</option>
+        	 </select><br><br>
+
+
+            <label for="comentario">Comentário:</label><br>
+            <textarea name="mensagem" rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Enviar Comentário">
+            <input type="button" value="Botão">
+            <button>Botão HTML</button>
+
+        </fieldset>
+    </form>
+
+    <p>Email: <a href="mailto:wellingtonfr18@gmail.com">Enviar Email</a></p>
+</section>
+</div>
+
+
+</body>
+</html>
