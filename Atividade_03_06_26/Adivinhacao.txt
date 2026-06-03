@@ -1,0 +1,112 @@
+HTML
+--------------------------------
+<html>
+  <body>
+    <div id="root">
+    </div>
+  </body>
+</html>
+
+--------------------------------
+CSS
+--------------------------------
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.game {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mensagem {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+------------------------------
+JS
+------------------------------
+import React, { StrictMode, useState } from "https://esm.sh/react";
+import { createRoot } from "https://esm.sh/react-dom/client";
+
+function Game() {
+  const numeroSecreto = 7;
+
+  const [palpite, setPalpite] = useState("");
+  const [mensagem, setMensagem] = useState("");
+
+  function verificarPalpite() {
+    if (palpite.trim() === "") {
+      setMensagem("Digite um número.");
+      return;
+    }
+
+    const numero = Number(palpite);
+
+    if (numero === numeroSecreto) {
+      setMensagem("🎉 Parabéns! Você acertou!");
+    } else if (numero < numeroSecreto) {
+      setMensagem("📈 O número secreto é maior.");
+    } else {
+      setMensagem("📉 O número secreto é menor.");
+    }
+  }
+
+  return (
+    <div className="game">
+      <h1>Jogo de Adivinhação</h1>
+
+      <input
+        type="number"
+        value={palpite}
+        onChange={(e) => setPalpite(e.target.value)}
+        placeholder="Digite um número"
+      />
+
+      <button onClick={verificarPalpite}>
+        Verificar
+      </button>
+
+      <div className="mensagem">
+        {mensagem}
+      </div>
+    </div>
+  );
+}
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(
+  <StrictMode>
+    <Game />
+  </StrictMode>
+);
