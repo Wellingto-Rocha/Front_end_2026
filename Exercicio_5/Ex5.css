@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb
+    );
+
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+h2 {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+#btnAdicionar {
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#btnAdicionar:hover {
+    background: #1d4ed8;
+}
+
+#listaConvidados {
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.nome {
+    font-size: 17px;
+    color: #1e293b;
+}
+
+/* Nome riscado */
+.riscado {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    border: none;
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    color: white;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.concluir {
+    background: #22c55e;
+}
+
+.concluir:hover {
+    background: #16a34a;
+}
+
+.editar {
+    background: #f59e0b;
+}
+
+.editar:hover {
+    background: #d97706;
+}
+
+.excluir {
+    background: #ef4444;
+}
+
+.excluir:hover {
+    background: #dc2626;
+}
+
+@media (max-width: 600px) {
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .acoes {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
